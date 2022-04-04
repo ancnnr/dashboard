@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #ebeff0
+    background-color: #ebeff0;
 }
 
 body, h1, h2, h3, p, ul, ul li, div {
@@ -38,7 +38,7 @@ img {
     grid-template-rows: min-content 4fr;
     grid-template-areas:
     "sidebar header"
-    "sidebar content"
+    "sidebar content";
 }
 
 .sidebar {
@@ -52,7 +52,8 @@ img {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 40px
+    gap: 40px;
+
 }
 
 .logo {
@@ -198,12 +199,15 @@ img {
     grid-template-columns: 4fr minmax(400px, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: 
-    "projects right-sidebar"
+    "projects right-sidebar";
+
+    padding-bottom: 50px;
+    gap: 20px;
 }
 
 .project-container {
     grid-area: projects;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .project-container h2, .announcement-container h2, .trending-container h2 {
@@ -246,21 +250,18 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     
-    gap: 15px;
+    gap: 30px;
 
     margin-right: 30px;
     margin-left: 20px;
 }
 
-.announcement-container {
-    
-}
 
 .announcement-list {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 50px;
+    gap: 30px;
     padding: 40px;
 }
 
@@ -269,35 +270,39 @@ img {
 }
 
 
-.announcement-list:first-child {
-    border-top: 1px solid grey;
+.announcement-list div:last-child {
     border-bottom: none;
 }
 
 .announcement-post p {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     color: #808080;
 }
 
-.trending-container {
-
-}
 
 .trending-list {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    padding: 10px;
+    gap: 5px;
+    padding: 40px;
 }
 
 .trending-item {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: center;
     
 }
 
-.announcement-container, .trending-container {
+.trending-item .profile-pic {
+    width: 80px;
+}
 
+.handle {
+    font-weight: 700;
 }
 
 .announcement-list, .trending-list {
